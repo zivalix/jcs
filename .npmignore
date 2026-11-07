@@ -1,0 +1,26 @@
+# Source files
+*.test.ts
+index.ts
+
+# Config files
+tsconfig*.json
+jest.config.*
+
+# CI/CD
+.github/
+
+# Build artifacts
+coverage/
+
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
