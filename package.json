@@ -1,6 +1,6 @@
 {
   "name": "@zivalix/jcs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RFC 8785 JSON Canonicalization with strict validation and WebCrypto SHA-256 and HMAC helpers. Zero runtime dependencies.",
   "license": "MIT",
   "author": {
