@@ -1,0 +1,82 @@
+{
+  "name": "@zivalix/jcs",
+  "version": "1.0.0",
+  "description": "RFC 8785 JSON Canonicalization with strict validation and WebCrypto SHA-256 and HMAC helpers. Zero runtime dependencies.",
+  "license": "MIT",
+  "author": {
+    "name": "ZIVALIX",
+    "email": "founders@zivalix.com",
+    "url": "https://zivalix.com"
+  },
+  "keywords": [
+    "json",
+    "canonicalize",
+    "canonical",
+    "jcs",
+    "rfc8785",
+    "hmac",
+    "sha256",
+    "webcrypto",
+    "webhook",
+    "signature",
+    "deterministic",
+    "serialization",
+    "security"
+  ],
+  "homepage": "https://github.com/zivalix/jcs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zivalix/jcs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zivalix/jcs/issues",
+    "email": "security@zivalix.com"
+  },
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc index.ts --outDir . --declaration --module commonjs --target ES2022 --strict --skipLibCheck --types node",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/index.test.ts"
+    ],
+    "collectCoverageFrom": [
+      "index.ts"
+    ]
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.0",
+    "jest": "^30.5.2",
+    "ts-jest": "^29.4.15",
+    "typescript": "^5.4.5"
+  }
+}

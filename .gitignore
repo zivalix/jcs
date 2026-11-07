@@ -1,0 +1,19 @@
+# Build artifacts (committed only when publishing)
+index.js
+index.d.ts
+
+# Test coverage
+coverage/
+
+# Dependencies
+node_modules/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor metadata
+.vscode/
+.idea/
+*.swp
+*.swo

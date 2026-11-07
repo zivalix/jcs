@@ -1,0 +1,6 @@
+# Require review from the core team for all changes
+*       @zivalix/core
+
+# Extra strict rule for the core canonicalization engine
+index.ts    @zivalix/core
+index.test.ts    @zivalix/core
