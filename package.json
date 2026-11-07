@@ -81,7 +81,7 @@
     "provenance": true
   },
   "devDependencies": {
-    "@types/jest": "^29.5.12",
+    "@types/jest": "^30.0.0",
     "@types/node": "^20.14.0",
     "jest": "^30.5.2",
     "ts-jest": "^29.4.15",
