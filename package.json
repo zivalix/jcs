@@ -21,7 +21,10 @@
     "signature",
     "deterministic",
     "serialization",
-    "security"
+    "security",
+    "json-hash",
+    "json-signature",
+    "webhook-verification"
   ],
   "homepage": "https://github.com/zivalix/jcs",
   "repository": {
